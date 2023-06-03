@@ -12,7 +12,7 @@ import { fetchHistoricalData } from "../api/stock-api";
 import StockContext from "../context/StockContext";
 
 const Chart = () => {
-  const [data, setData] = useState(mockHistoricalData);
+  const [data, setData] = useState([]);
   const [filter, setFilter] = useState("1W");
 
   const { stockSymbol } = useContext(StockContext);
